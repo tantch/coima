@@ -5,13 +5,11 @@ import MenuPage from './layouts/MenuPage';
 
 function App() {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/pastagens" element={<MenuPage><Pastagens /></MenuPage>} />
   
       </Routes>
-    </Router>
   );
 }
 

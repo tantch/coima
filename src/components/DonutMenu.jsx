@@ -7,10 +7,10 @@ const pages = [
     label: 'nutrir',
     description: 'Nutrir description',
     submenu: [
-      {name: "plantar", links: [{ href: '/pastagens', label: 'pastagens'}]},
-      {name: "reciclar", links: [{ href: '/humus', label: 'húmus'},{ href: '/compostagem', label: 'compostagem'}]},
-      {name: "coletar", links: [{ href: '/aroeira', label: 'aroeira'}]},
-      {name: "reflorestar", links: [{ href: '/agrofloresta', label: 'agrofloresta'}]},
+      {name: "plantar", links: [{ href: 'pastagens', label: 'pastagens'}]},
+      {name: "reciclar", links: [{ href: 'humus', label: 'húmus'},{ href: 'compostagem', label: 'compostagem'}]},
+      {name: "coletar", links: [{ href: 'aroeira', label: 'aroeira'}]},
+      {name: "reflorestar", links: [{ href: 'agrofloresta', label: 'agrofloresta'}]},
     ]
   },
   { href: '/habitar', label: 'habitar', description: 'Habitar description', submenu: []},
