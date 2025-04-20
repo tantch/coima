@@ -1,7 +1,7 @@
 const Pastagens = () => (
   <div>
     <h2>Pastagens</h2>
-    <p>This page uses the shared layout.</p>
+    <p>Texto sobre pastagens</p>
   </div>
 );
 
