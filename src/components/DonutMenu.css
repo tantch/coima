@@ -94,14 +94,14 @@
 }
 
 .donut-item.focus div{
-  border-color:brown;
+  border-color:black;
 }
 .donut-item.unfocused div{
   border-color:gray;
 }
 
 .donut-label.focus{
-  color:brown;
+  color:black;
 }
 .donut-label.unfocused{
   color:gray;
@@ -112,4 +112,12 @@
 }
 .donut-item.unfocused::after {
   background-color: gray;
+}
+
+.submenu-links {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

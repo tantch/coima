@@ -1,80 +1,99 @@
 import { useState } from 'react';
-import './DonutMenu.css'; // Import the CSS
+import './DonutMenu.css';
 
 const pages = [
   {
-    href: '/nutrir',
     label: 'nutrir',
-    description: 'Nutrir description',
+    description: 'cadeia energética necessária para o exercício da vida (seja na espécie animal ou vegetal), para continuar a respeitar a ancestralidade da permanência',
     submenu: [
-      {name: "plantar", links: [{ href: 'pastagens', label: 'pastagens'}]},
-      {name: "reciclar", links: [{ href: 'humus', label: 'húmus'},{ href: 'compostagem', label: 'compostagem'}]},
-      {name: "coletar", links: [{ href: 'aroeira', label: 'aroeira'}]},
-      {name: "reflorestar", links: [{ href: 'agrofloresta', label: 'agrofloresta'}]},
+      { name: "plantar"},
+      { name: "reciclar"},
+      { name: "coletar"},
+      { name: "reflorestar"},
     ]
   },
-  { href: '/habitar', label: 'habitar', description: 'Habitar description', submenu: []},
-  { href: '/comunicar', label: 'comunicar', description: 'Comunicar description', submenu: []},
+  { 
+    label: 'habitar', 
+    description: 'estruturas artificiais com condições para sobrevivência, espaços físicos construídos que podem desenvolver culturas e participar nos ecossistemas', 
+    submenu: [
+      { name: "restaurar"},
+      { name: "transformar"},
+      { name: "conjugar"},
+      { name: "preservar"},
+    ] 
+  },
+  {
+    label: 'comunicar',
+    description: 'observação permanente sobre o outro e o mundo, participar na diversidade das linguagens, descobrir identidades comuns e construir novas coletividades',
+    submenu: [
+      { name: "procurar"},
+      { name: "informar"},
+      { name: "compartilhar"},
+      { name: "inovar"},
+    ] },
 ];
 
-const DonutMenu = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu }) => {
 
   return (
     <nav className="main-menu">
       <div className="donut-menu">
         {pages.map((page, index) => (
-          <div 
+          <div
             key={index}
-            className={`donut-item ${hoveredIndex !== null ? (hoveredIndex === index ? 'focus' : 'unfocused' ) : ''}`}
-            onMouseEnter={() => setHoveredIndex(index)}
+            className={`donut-item ${currentMenu !== null ? (currentMenu === index ? 'focus' : 'unfocused') : ''}`}
+            onClick={() => {
+              setCurrentPage(null);
+              setCurrentMenu(index);
+            }}
           >
             <div />
           </div>
         ))}
       </div>
       <div className="donut-labels">
-      {pages.map((page, index) => (
-          <div 
+        {pages.map((page, index) => (
+          <div
             key={index}
-            className={`donut-label ${hoveredIndex !== null ? (hoveredIndex === index ? 'focus' : 'unfocused' ) : ''}`}
-            onMouseEnter={() => setHoveredIndex(index)}
+            className={`donut-label ${currentMenu !== null ? (currentMenu === index ? 'focus' : 'unfocused') : ''}`}
+            onClick={() => {
+              setCurrentPage(null);
+              setCurrentMenu(index);
+            }}
           >
             {page.label}
           </div>
         ))}
       </div>
       <div className='menu-description'>
-       {hoveredIndex !== null && pages[hoveredIndex].description}
+        {currentMenu !== null && pages[currentMenu].description}
       </div>
       <div className='submenu'>
-       {hoveredIndex !== null && (
-        <div>
-          <div className="donut-menu">
-            {pages[hoveredIndex].submenu.map((page, index) => (
-              <div 
-                key={index}
-                className={`donut-item`}
-              >
-                <div />
-              </div>
-            ))}
+        {currentMenu !== null && (
+          <div>
+            <div className="donut-menu">
+              {pages[currentMenu].submenu.map((page, index) => (
+                <div 
+                  key={index}
+                  className={`donut-item ${currentPage !== null ? (currentPage === page.name ? 'focus' : 'unfocused') : ''}`}
+                >
+                  <div />
+                </div>
+              ))}
+            </div>
+            <div className="donut-labels">
+              {pages[currentMenu].submenu.map((page, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPage(page.name)}
+                  className={`donut-label ${currentPage !== null ? (currentPage === page.name ? 'focus' : 'unfocused') : ''}`}
+                >
+                  {page.name}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="donut-labels">
-            {pages[hoveredIndex].submenu.map((page, index) => (
-              <div 
-                key={index}
-                className={`donut-label`}
-              >
-                <div>{page.name}</div>
-                {page.links.map((link, index) => (
-                  <a key={index} href={link.href}>{link.label}</a>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-       )}
+        )}
       </div>
     </nav>
   );

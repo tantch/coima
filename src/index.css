@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Square721Regular';
+  src: url('/fonts/Square721Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

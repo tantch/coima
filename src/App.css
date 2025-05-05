@@ -1,0 +1,8 @@
+body {
+  font-family: 'Square721Regular';
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
