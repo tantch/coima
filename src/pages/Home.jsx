@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import DonutMenu from "../components/DonutMenu";
 import Plantar from "./Plantar";
 import Reciclar from "./Reciclar";
@@ -16,6 +16,13 @@ import Informar from "./Informar";
 const Home = () => {
   const [currentMenu, setCurrentMenu] = useState(null);
   const [currentPage, setCurrentPage] = useState(null);
+  const pageRef = useRef(null);
+
+  useEffect(() => {
+    if (currentPage && pageRef.current) {
+      pageRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPage]);
 
   const getCurrentPage = (p) => {
     switch (p) {
@@ -66,13 +73,18 @@ const Home = () => {
             Rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:
           </p>
         </div>
-        <div class="px-8 py-4">
+        <div className="px-8 py-4">
           <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
         </div>
       </div>
-      <div className='px-8 py-4'>
-        {getCurrentPage(currentPage)}
-      </div>
+      {currentPage && (
+        <div
+          className='px-8 py-4'
+          ref={pageRef}
+        >
+          {getCurrentPage(currentPage)}
+        </div>
+      )}
     </div>
   );
 };
