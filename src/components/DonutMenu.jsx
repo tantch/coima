@@ -35,16 +35,24 @@ const pages = [
 
 const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu }) => {
 
+  const [mainHover, setMainHover] = useState(null);
+  const [subHover, setSubHover] = useState(null);
+
+
   return (
     <nav className="main-menu">
       <div className="donut-menu">
         {pages.map((page, index) => (
           <div
             key={index}
-            className={`donut-item ${currentMenu !== null ? (currentMenu === index ? 'focus' : 'unfocused') : ''}`}
+            className={`donut-item cursor-pointer ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
             onClick={() => {
               setCurrentPage(null);
               setCurrentMenu(index);
+            }}
+            onMouseEnter={() => {
+              setSubHover(null);
+              setMainHover(index)
             }}
           >
             <div />
@@ -55,17 +63,21 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
         {pages.map((page, index) => (
           <div
             key={index}
-            className={`donut-label ${currentMenu !== null ? (currentMenu === index ? 'focus' : 'unfocused') : ''}`}
+            className={`donut-label cursor-pointer ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
             onClick={() => {
               setCurrentPage(null);
               setCurrentMenu(index);
             }}
+            onMouseEnter={() => {
+              setSubHover(null);
+              setMainHover(index)
+            }} 
           >
             {page.label}
           </div>
         ))}
       </div>
-      <div className='menu-description'>
+      <div className='menu-description py-4'>
         {currentMenu !== null && pages[currentMenu].description}
       </div>
       <div className='submenu'>
@@ -75,7 +87,12 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
               {pages[currentMenu].submenu.map((page, index) => (
                 <div 
                   key={index}
-                  className={`donut-item ${currentPage !== null ? (currentPage === page.name ? 'focus' : 'unfocused') : ''}`}
+                  onClick={() => setCurrentPage(page.name)}
+                  onMouseEnter={() => {
+                    setSubHover(index);
+                    setMainHover(null);
+                  }}
+                  className={`donut-item ${currentPage === page.name || subHover === index ? 'focus' : ''}`}
                 >
                   <div />
                 </div>
@@ -86,7 +103,11 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
                 <button
                   key={index}
                   onClick={() => setCurrentPage(page.name)}
-                  className={`donut-label ${currentPage !== null ? (currentPage === page.name ? 'focus' : 'unfocused') : ''}`}
+                  onMouseEnter={() => {
+                    setSubHover(index);
+                    setMainHover(null);
+                  }}
+                  className={`donut-label ${currentPage === page.name || subHover === index ? 'focus' : ''}`}
                 >
                   {page.name}
                 </button>

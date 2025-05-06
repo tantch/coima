@@ -50,17 +50,27 @@ const Home = () => {
 
   return (
     <div>
-      {currentMenu=== null && (
-        <div className='w-full w-screen'>
-          <img className="w-full" src="images/main.jpg" />
-          <p>O projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por oresta tropical (bioma da Mata Atlântica).
-A metodologia do projeto, baseada na permacultura, considera o território e as ações nele realizadas como um conjunto, onde todos os processos têm lugar, desde a coleta de matérias primas, até ao seu processamento.
-Pesquisa e prática de conteúdos ecológicos, sobre o equilíbrio entre a nossa existência e o lugar que ocupamos, criam contrapartidas ambientais, conscientes e responsáveis do impacto da ação humana na natureza.</p>
-          <p>Rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:</p>
+      <div className='h-screen flex flex-col'>
+        <div className="relative w-full h-1/2 overflow-hidden p-8 flex-1"> 
+          <img className="w-full object-cover" src="images/main.jpg" />
         </div>
-      )}
-      <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
-      <div className='mt-2'>
+        <div className="p-8 text-xs">
+          <p>
+            O projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
+  A metodologia do projeto, baseada na permacultura, considera o território e as ações nele realizadas como um conjunto, onde todos os processos têm lugar, desde a coleta de matérias primas, até ao seu processamento.
+          </p>
+          <p>
+            Pesquisa e prática de conteúdos ecológicos, sobre o equilíbrio entre a nossa existência e o lugar que ocupamos, criam contrapartidas ambientais, conscientes e responsáveis do impacto da ação humana na natureza.
+          </p>
+          <p>
+            Rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:
+          </p>
+        </div>
+        <div class="px-8 py-4">
+          <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
+        </div>
+      </div>
+      <div className='px-8 py-4'>
         {getCurrentPage(currentPage)}
       </div>
     </div>

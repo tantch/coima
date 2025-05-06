@@ -1,7 +1,6 @@
 .main-menu {
   display:flex;
   flex-direction: column;
-  padding:1em;
 }
 .donut-menu {
   display: flex;
@@ -49,9 +48,9 @@
 
 .donut-item div {
   display: block;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #333;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #333;
   border-radius: 50%;
   background-color: white;
   z-index: 1;
@@ -62,8 +61,8 @@
 .donut-item:not(:last-child):after {
   content: '';
   position: absolute;
-  height: 2px;
-  background: #333;
+  height: 4px;
+  background: #c8c8c8;
   top: 50%;
   left: 0%;
   right: -50%;
@@ -73,8 +72,8 @@
 .donut-item:nth-child(1):after {
   content: '';
   position: absolute;
-  height: 2px;
-  background: #333;
+  height: 4px;
+  background: #c8c8c8;
   top: 50%;
   left: 0%;
   right: -50%;
@@ -84,8 +83,8 @@
 .donut-item:nth-last-child(2)::after {
   content: '';
   position: absolute;
-  height: 2px;
-  background: #333;
+  height: 4px;
+  background: #c8c8c8;
   top: 50%;
   left: 50%;
   right: -100%;
@@ -93,25 +92,19 @@
   z-index: 0;
 }
 
+.donut-item div{
+  border-color:#c8c8c8;
+}
+
 .donut-item.focus div{
   border-color:black;
 }
-.donut-item.unfocused div{
-  border-color:gray;
-}
 
+.donut-label{
+  color:#c8c8c8;
+}
 .donut-label.focus{
   color:black;
-}
-.donut-label.unfocused{
-  color:gray;
-}
-
-.donut-item.focus::after {
-  background-color: gray;
-}
-.donut-item.unfocused::after {
-  background-color: gray;
 }
 
 .submenu-links {
