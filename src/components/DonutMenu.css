@@ -48,21 +48,24 @@
 
 .donut-item div {
   display: block;
-  width: 15px;
-  height: 15px;
-  border: 4px solid #333;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #333;
   border-radius: 50%;
   background-color: white;
   z-index: 1;
   text-decoration: none;
 }
 
-/* Draw the connecting line using ::before */
-.donut-item:not(:last-child):after {
+.donut-item:after {
   content: '';
   position: absolute;
-  height: 4px;
+  height: 5px;
   background: #c8c8c8;
+}
+
+/* Draw the connecting line using ::before */
+.donut-item:not(:last-child):after {
   top: 50%;
   left: 0%;
   right: -50%;
@@ -70,10 +73,6 @@
   z-index: 0;
 }
 .donut-item:nth-child(1):after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background: #c8c8c8;
   top: 50%;
   left: 0%;
   right: -50%;
@@ -81,10 +80,6 @@
   z-index: 0;
 }
 .donut-item:nth-last-child(2)::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background: #c8c8c8;
   top: 50%;
   left: 50%;
   right: -100%;
@@ -108,7 +103,6 @@
 }
 
 .submenu-links {
-  margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;

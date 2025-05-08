@@ -16,13 +16,15 @@ import Informar from "./Informar";
 const Home = () => {
   const [currentMenu, setCurrentMenu] = useState(null);
   const [currentPage, setCurrentPage] = useState(null);
-  const pageRef = useRef(null);
+  const menuRef = useRef(null);
+
 
   useEffect(() => {
-    if (currentPage && pageRef.current) {
-      pageRef.current.scrollIntoView({ behavior: "smooth" });
+    console.log("scroll")
+    if (menuRef.current && currentMenu !== null) {
+      menuRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [currentPage]);
+  }, [currentPage,currentMenu]);
 
   const getCurrentPage = (p) => {
     switch (p) {
@@ -57,35 +59,40 @@ const Home = () => {
 
   return (
     <div>
-      <div className='h-screen flex flex-col'>
-        <div className="relative w-full h-1/2 overflow-hidden p-8 flex-1"> 
-          <img className="w-full object-cover" src="images/main.jpg" />
-        </div>
-        <div className="p-8 text-xs">
-          <p>
-            O projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
-  A metodologia do projeto, baseada na permacultura, considera o território e as ações nele realizadas como um conjunto, onde todos os processos têm lugar, desde a coleta de matérias primas, até ao seu processamento.
-          </p>
-          <p>
-            Pesquisa e prática de conteúdos ecológicos, sobre o equilíbrio entre a nossa existência e o lugar que ocupamos, criam contrapartidas ambientais, conscientes e responsáveis do impacto da ação humana na natureza.
-          </p>
-          <p>
-            Rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:
-          </p>
-        </div>
-        <div className="px-8 py-4">
-          <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
+      <div className='mb-12'>
+        <div className="relative w-screen h-[120vh] bg-cover bg-center" style={{ backgroundImage: "url('/coima/images/main.jpg" }}>
+          <img src="/coima/images/logo-white.png" alt="Logo" className="absolute top-4 left-4 h-64" />
+          <div className="text-sm absolute bottom-0 text-white px-16 py-4">
+            <p className="pt-1">
+              - o  projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
+            </p>
+            <p className="pt-1">
+              - a metodologia do projeto, baseada na permacultura, considera o território e as ações nele realizadas como um conjunto, onde todos os processos têm lugar, desde a coleta de matérias primas, até ao seu processamento.
+            </p>
+            <p className="pt-1">
+              - pesquisa e prática de conteúdos ecológicos, sobre o equilíbrio entre a nossa existência e o lugar que ocupamos, criam contrapartidas ambientais, conscientes e responsáveis do impacto da ação humana na natureza.
+            </p>
+            <p className="pt-1">
+              - rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:
+            </p>
+          </div>
         </div>
       </div>
-      {currentPage && (
+      <div
+          className="px-16"
+          ref={menuRef}
+        >
+        <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
+      </div>
+        {currentPage && (
         <div
-          className='px-8 py-4'
-          ref={pageRef}
+          className='px-6 py-4 h-screen overflow-y-scroll'
         >
           {getCurrentPage(currentPage)}
         </div>
       )}
     </div>
+
   );
 };
 
