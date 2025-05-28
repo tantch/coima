@@ -1,9 +1,9 @@
 import { useRef, useState, useEffect } from 'react';
 import DonutMenu from "../components/DonutMenu";
-import Plantar from "./Plantar";
-import Reciclar from "./Reciclar";
-import Coletar from "./Coletar";
-import Reflorestar from "./Reflorestar";
+import Pastagens from "./Pastagens";
+import Fertilizantes from "./Fertilizantes";
+import Aroeira from "./Aroeira";
+import Agrofloresta from "./Agrofloresta";
 import Transformar from "./Transformar";
 import Restaurar from "./Restaurar";
 import Preservar from "./Preservar";
@@ -27,15 +27,16 @@ const Home = () => {
   }, [currentPage,currentMenu]);
 
   const getCurrentPage = (p) => {
+    console.log(p)
     switch (p) {
-      case 'plantar':
-        return <Plantar />;
-      case 'reciclar':
-        return <Reciclar />;
-      case 'coletar':
-        return <Coletar />;
-      case 'reflorestar':
-        return <Reflorestar />;
+      case 'pastagens':
+        return <Pastagens />;
+      case 'fertilizantes':
+        return <Fertilizantes />;
+      case 'aroeira':
+        return <Aroeira />;
+      case 'agrofloresta':
+        return <Agrofloresta />;
       case 'restaurar':
         return <Restaurar />;
       case 'transformar':
@@ -58,11 +59,11 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="bg-orange-50">
       <div className='mb-12'>
         <div className="relative w-screen h-[120vh] bg-cover bg-center" style={{ backgroundImage: "url('/coima/images/main.jpg" }}>
           <img src="/coima/images/logo-white.png" alt="Logo" className="absolute top-4 left-4 h-64" />
-          <div className="text-sm absolute bottom-0 text-white px-16 py-4">
+          <div className="text-sm absolute bottom-0 px-16 py-4 text-orange-50">
             <p className="pt-1">
               - o  projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
             </p>
@@ -84,9 +85,9 @@ const Home = () => {
         >
         <DonutMenu setCurrentPage={setCurrentPage} currentPage={currentPage} setCurrentMenu={setCurrentMenu} currentMenu={currentMenu}/>
       </div>
-        {currentPage && (
+        {currentMenu !== null && (
         <div
-          className='px-6 py-4 h-screen overflow-y-scroll'
+          className='px-16 py-4 h-screen overflow-y-scroll'
         >
           {getCurrentPage(currentPage)}
         </div>

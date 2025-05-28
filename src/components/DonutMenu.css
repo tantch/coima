@@ -10,7 +10,6 @@
 }
 .donut-labels {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   position: relative;
 }
@@ -52,7 +51,7 @@
   height: 20px;
   border: 5px solid #333;
   border-radius: 50%;
-  background-color: white;
+  background-color: oklch(98% 0.016 73.684);
   z-index: 1;
   text-decoration: none;
 }
@@ -61,7 +60,7 @@
   content: '';
   position: absolute;
   height: 5px;
-  background: #c8c8c8;
+  background:  #b59464;
 }
 
 /* Draw the connecting line using ::before */
@@ -87,24 +86,99 @@
   z-index: 0;
 }
 
-.donut-item div{
-  border-color:#c8c8c8;
-}
-
-.donut-item.focus div{
-  border-color:black;
-}
-
-.donut-label{
-  color:#c8c8c8;
-}
-.donut-label.focus{
-  color:black;
-}
-
 .submenu-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.donut-item div{
+  border-color: #b59464;
+}
+
+.donut-label{
+  color: #b59464;
+}
+
+.nutrir .donut-label.focus{
+  color: #755623;
+}
+.nutrir.donut-label.focus{
+  color: #755623;
+}
+.nutrir .donut-item.focus div{
+  border-color: #755623;
+}
+.nutrir.donut-item.focus div{
+  border-color: #755623;
+}
+
+.habitar .donut-label.focus{
+  color: #b75303;
+}
+.habitar .donut-item.focus div{
+  border-color: #b75303;
+}
+.habitar.donut-label.focus{
+  color: #b75303;
+}
+.habitar.donut-item.focus div{
+  border-color: #b75303;
+}
+
+.comunicar .donut-label.focus{
+  color: #db6f10;
+}
+.comunicar .donut-item.focus div{
+  border-color: #db6f10;
+}
+.comunicar.donut-label.focus{
+  color: #db6f10;
+}
+.comunicar.donut-item.focus div{
+  border-color: #db6f10;
+}
+
+.nutrir .donut-item:after {
+  background: #755623;
+}
+.habitar .donut-item:after {
+  background: #b75303;
+}
+.comunicar .donut-item:after {
+  background: #db6f10;
+}
+
+.nutrir.menu-description {
+  color: #755623;
+}
+.habitar.menu-description {
+  color: #b75303;
+}
+.comunicar.menu-description {
+  color: #db6f10;
+}
+
+.nutrir .page-items .focus {
+  color: #755623;
+}
+.habitar .page-items .focus  {
+  color: #b75303;
+}
+.comunicar .page-items .focus  {
+  color: #db6f10;
+}
+
+.page-items {
+  display: flex;
+  flex-direction: column;
+  color: #b59464;
+  align-items:center;
+}
+.donut-labels > div:first-child .page-items {
+  align-items: flex-start;
+}
+.donut-labels > div:last-child .page-items {
+  align-items: flex-end;
 }
