@@ -29,10 +29,10 @@ const pages = [
     className: 'comunicar',
     description: 'observação permanente sobre o outro e o mundo, participar na diversidade das linguagens, descobrir identidades comuns e construir novas coletividades',
     submenu: [
-      { name: "procurar", items: []},
-      { name: "informar", items: []},
-      { name: "compartilhar", items: []},
-      { name: "inovar", items: []},
+      { name: "procurar", items: [{name: "ruínas", value: "ruinas"}]},
+      { name: "informar", items: [{name: "cursos", value: "cursos"}]},
+      { name: "compartilhar", items: [{name: "trilhas", value: "trilhas"}, {name: "escalada", value: "escalada"}]},
+      { name: "inovar", items: [{name: "residências artísticas", value: "residencias"}]},
     ] },
 ];
 

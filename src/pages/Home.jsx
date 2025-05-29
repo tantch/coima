@@ -8,12 +8,15 @@ import Phibra from "./Phibra";
 import Banco from "./Banco";
 import Viveiro from "./Viveiro";
 import Jardim from "./Jardim";
-import Preservar from "./Preservar";
-import Conjungar from "./Conjungar";
-import Procurar from "./Procurar";
-import Compartilhar from "./Compartilhar";
-import Inovar from "./Inovar";
-import Informar from "./Informar";
+import Maloca from "./Maloca";
+import Filtro from "./Filtro";
+import Observatorio from "./Observatorio";
+import Teia from "./Teia";
+import Ruinas from "./Ruinas";
+import Trilhas from "./Trilhas";
+import Escalada from "./Escalada";
+import Residencias from "./Residencias";
+import Cursos from "./Cursos";
 
 const Home = () => {
   const [currentMenu, setCurrentMenu] = useState(null);
@@ -47,18 +50,24 @@ const Home = () => {
         return <Banco />;
       case 'viveiro':
         return <Viveiro />;
-      case 'preservar':
-        return <Preservar />;
-      case 'conjugar':
-        return <Conjungar />;
-      case 'procurar':
-        return <Procurar />;
-      case 'informar':
-        return <Informar />;
-      case 'compartilhar':
-        return <Compartilhar />;
-      case 'inovar':
-        return <Inovar />;
+      case 'teia':
+        return <Teia />;
+      case 'observatorio':
+        return <Observatorio />;
+      case 'maloca':
+        return <Maloca />;
+      case 'filtro':
+        return <Filtro />;
+      case 'ruinas':
+        return <Ruinas />;
+      case 'cursos':
+        return <Cursos />;
+      case 'trilhas':
+        return <Trilhas />;
+      case 'escalada':
+          return <Escalada />;
+      case 'residencias':
+        return <Residencias />;
       default:
         return null;
     }

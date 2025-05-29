@@ -9,7 +9,7 @@ misturadas com a resina vegetal, são prensadas dentro de moldes, num processo t
 a montagem dos componentes é feita simplesmente por encaixe.
 é uma proposta alternativa que interpreta a tradição do uso das fibras no mobiliário brasileiro que, sendo uma matéria prima sem valor comercial, reduz os custos de
 produção, tornando-se acessível a um público consciente da responsabilidade ambiental.</p>
-<ImageCarousel
+  <ImageCarousel
       images={[
         "/coima/assets/transformar/phibra-1.webp",
         "/coima/assets/transformar/phibra-2.webp",
