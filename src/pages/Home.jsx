@@ -4,8 +4,10 @@ import Pastagens from "./Pastagens";
 import Fertilizantes from "./Fertilizantes";
 import Aroeira from "./Aroeira";
 import Agrofloresta from "./Agrofloresta";
-import Transformar from "./Transformar";
-import Restaurar from "./Restaurar";
+import Phibra from "./Phibra";
+import Banco from "./Banco";
+import Viveiro from "./Viveiro";
+import Jardim from "./Jardim";
 import Preservar from "./Preservar";
 import Conjungar from "./Conjungar";
 import Procurar from "./Procurar";
@@ -37,10 +39,14 @@ const Home = () => {
         return <Aroeira />;
       case 'agrofloresta':
         return <Agrofloresta />;
-      case 'restaurar':
-        return <Restaurar />;
-      case 'transformar':
-        return <Transformar />;
+      case 'jardim':
+        return <Jardim />;
+      case 'phibra':
+        return <Phibra />;
+      case 'banco':
+        return <Banco />;
+      case 'viveiro':
+        return <Viveiro />;
       case 'preservar':
         return <Preservar />;
       case 'conjugar':

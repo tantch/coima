@@ -3,7 +3,7 @@ import './DonutMenu.css';
 
 const pages = [
   {
-    label: 'nutrir',
+    label: 'circuito nutrir',
     className: 'nutrir',
     description: 'cadeia energética necessária para o exercício da vida (seja na espécie animal ou vegetal), para continuar a respeitar a ancestralidade da permanência',
     submenu: [
@@ -14,18 +14,18 @@ const pages = [
     ]
   },
   { 
-    label: 'habitar', 
+    label: 'circuito habitar', 
     className: 'habitar',
     description: 'estruturas artificiais com condições para sobrevivência, espaços físicos construídos que podem desenvolver culturas e participar nos ecossistemas', 
     submenu: [
-      { name: "restaurar", items: []},
-      { name: "transformar", items: []},
-      { name: "conjugar", items: []},
-      { name: "preservar", items: []},
+      { name: "restaurar", items: [{name: "jardim nômade", value: "jardim"}]},
+      { name: "transformar", items: [{name: "projeto phibra", value: "phibra"}, {name: "viveiro", value: "viveiro"}, {name: "banco aroeira", value: "banco"}]},
+      { name: "conjugar", items: [{name: "teia", value: "teia"}, {name: "observatório", value: "observatorio"}]},
+      { name: "preservar", items: [{name: "maloca krenak", value: "maloca"}, {name: "filtro de àgua", value: "filtro"}]},
     ] 
   },
   {
-    label: 'comunicar',
+    label: 'circuito comunicar',
     className: 'comunicar',
     description: 'observação permanente sobre o outro e o mundo, participar na diversidade das linguagens, descobrir identidades comuns e construir novas coletividades',
     submenu: [
@@ -48,7 +48,7 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
         {pages.map((page, index) => (
           <div
             key={index}
-            className={`donut-item cursor-pointer ${pages?.[index]?.className} ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
+            className={`donut-item cursor-pointer ${page.className} ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
             onClick={() => {
               setCurrentPage(null);
               setCurrentMenu(index);
@@ -71,7 +71,7 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
         {pages.map((page, index) => (
           <div
             key={index}
-            className={`donut-label flex items-end cursor-pointer ${pages?.[index]?.className} ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
+            className={`donut-label flex items-end cursor-pointer ${page.className} ${currentMenu === index || mainHover === index ? 'focus' : ''}`}
             onClick={() => {
               setCurrentPage(null);
               setCurrentMenu(index);
