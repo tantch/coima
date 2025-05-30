@@ -7,11 +7,11 @@ const Aroeira = () => (
     </p>
     <ImageCarousel
       images={[
-        "/coima/assets/coletar/aroeira-1.webp",
-        "/coima/assets/coletar/aroeira-2.webp",
-        "/coima/assets/coletar/aroeira-3.webp",
-        "/coima/assets/coletar/aroeira-4.webp",
-        "/coima/assets/coletar/aroeira-5.webp"
+        "/assets/coletar/aroeira-1.webp",
+        "/assets/coletar/aroeira-2.webp",
+        "/assets/coletar/aroeira-3.webp",
+        "/assets/coletar/aroeira-4.webp",
+        "/assets/coletar/aroeira-5.webp"
       ]}
     />
   </div>

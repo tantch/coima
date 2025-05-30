@@ -9,21 +9,21 @@ mais saudáveis e mais responsáveis.</p>
     <p></p>
     <ImageCarousel
       images={[
-        "/coima/assets/informar/bokashi-1.webp",
-        "/coima/assets/informar/bokashi-2.webp",
-        "/coima/assets/informar/bokashi-3.webp",
-        "/coima/assets/informar/bokashi-4.webp",
-        "/coima/assets/informar/bokashi-5.webp",
-        "/coima/assets/informar/bokashi-6.webp",
-        "/coima/assets/informar/bokashi-7.webp",
+        "/assets/informar/bokashi-1.webp",
+        "/assets/informar/bokashi-2.webp",
+        "/assets/informar/bokashi-3.webp",
+        "/assets/informar/bokashi-4.webp",
+        "/assets/informar/bokashi-5.webp",
+        "/assets/informar/bokashi-6.webp",
+        "/assets/informar/bokashi-7.webp",
       ]}
     />
     <h2>aroeira</h2>
     <p>2021</p>
     <ImageCarousel
       images={[
-        "/coima/assets/informar/aroeira-1.webp",
-        "/coima/assets/informar/aroeira-2.webp",
+        "/assets/informar/aroeira-1.webp",
+        "/assets/informar/aroeira-2.webp",
       ]}
     />
   </div>

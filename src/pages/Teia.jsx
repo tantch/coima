@@ -7,7 +7,7 @@ const Teia = () => (
 redes indígenas, para manter a integridade do solo e proteger dos animais silvestres, manisfetação de outras culturas na Mata, com alteração de função e escala.</p>
     <ImageCarousel
       images={[
-        "/coima/assets/conjungar/teia-1.webp",
+        "/assets/conjungar/teia-1.webp",
       ]}
     />
   </div>

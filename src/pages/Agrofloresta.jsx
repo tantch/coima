@@ -8,11 +8,11 @@ diversificação das raízes e para desenvolver micro organismos que transformam
     </p>
     <ImageCarousel 
       images={[
-        "/coima/assets/reflorestar/agrofloresta-1.webp",
-        "/coima/assets/reflorestar/agrofloresta-2.webp",
-        "/coima/assets/reflorestar/agrofloresta-3.webp",
-        "/coima/assets/reflorestar/agrofloresta-4.webp",
-        "/coima/assets/reflorestar/agrofloresta-5.webp"
+        "/assets/reflorestar/agrofloresta-1.webp",
+        "/assets/reflorestar/agrofloresta-2.webp",
+        "/assets/reflorestar/agrofloresta-3.webp",
+        "/assets/reflorestar/agrofloresta-4.webp",
+        "/assets/reflorestar/agrofloresta-5.webp"
       ]} />
   </div>
 );

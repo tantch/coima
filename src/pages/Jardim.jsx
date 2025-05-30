@@ -14,16 +14,16 @@ disponibilidade de nutrientes.</p>
     projeto para a prservação do bioma da mata Atlântica.</p>
     <ImageCarousel
       images={[
-        "/coima/assets/restaurar/jardim-1.webp",
-        "/coima/assets/restaurar/jardim-2.webp",
-        "/coima/assets/restaurar/jardim-3.webp",
-        "/coima/assets/restaurar/jardim-4.webp",
-        "/coima/assets/restaurar/jardim-5.webp",
-        "/coima/assets/restaurar/jardim-6.webp",
-        "/coima/assets/restaurar/jardim-7.webp",
-        "/coima/assets/restaurar/jardim-8.webp",
-        "/coima/assets/restaurar/jardim-9.webp",
-        "/coima/assets/restaurar/jardim-10.webp"
+        "/assets/restaurar/jardim-1.webp",
+        "/assets/restaurar/jardim-2.webp",
+        "/assets/restaurar/jardim-3.webp",
+        "/assets/restaurar/jardim-4.webp",
+        "/assets/restaurar/jardim-5.webp",
+        "/assets/restaurar/jardim-6.webp",
+        "/assets/restaurar/jardim-7.webp",
+        "/assets/restaurar/jardim-8.webp",
+        "/assets/restaurar/jardim-9.webp",
+        "/assets/restaurar/jardim-10.webp"
       ]}
     />
   </div>

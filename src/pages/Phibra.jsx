@@ -11,12 +11,12 @@ a montagem dos componentes é feita simplesmente por encaixe.
 produção, tornando-se acessível a um público consciente da responsabilidade ambiental.</p>
   <ImageCarousel
       images={[
-        "/coima/assets/transformar/phibra-1.webp",
-        "/coima/assets/transformar/phibra-2.webp",
-        "/coima/assets/transformar/phibra-3.webp",
-        "/coima/assets/transformar/phibra-4.webp",
-        "/coima/assets/transformar/phibra-5.webp",
-        "/coima/assets/transformar/phibra-6.webp",
+        "/assets/transformar/phibra-1.webp",
+        "/assets/transformar/phibra-2.webp",
+        "/assets/transformar/phibra-3.webp",
+        "/assets/transformar/phibra-4.webp",
+        "/assets/transformar/phibra-5.webp",
+        "/assets/transformar/phibra-6.webp",
       ]}
     />
   </div>

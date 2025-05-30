@@ -13,12 +13,12 @@ a linguagem, diálogo do antigo com o novo pretende abrir uma alternativa para o
 foi realizado um modelo na escala 1:2 (metade do tamanho real) para testar a espacialidade e escala do edifício.</p>
     <ImageCarousel
       images={[
-        "/coima/assets/preservar/maloca-1.webp",
-        "/coima/assets/preservar/maloca-2.webp",
-        "/coima/assets/preservar/maloca-3.webp",
-        "/coima/assets/preservar/maloca-4.webp",
-        "/coima/assets/preservar/maloca-5.webp",
-        "/coima/assets/preservar/maloca-6.webp",
+        "/assets/preservar/maloca-1.webp",
+        "/assets/preservar/maloca-2.webp",
+        "/assets/preservar/maloca-3.webp",
+        "/assets/preservar/maloca-4.webp",
+        "/assets/preservar/maloca-5.webp",
+        "/assets/preservar/maloca-6.webp",
       ]}
     />
   </div>

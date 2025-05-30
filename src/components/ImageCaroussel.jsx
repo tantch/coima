@@ -11,6 +11,7 @@ const ImageCarousel = ({ images }) => {
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 3000,
+    lazyLoad: "ondemand",
   };
 
   return (

@@ -15,11 +15,11 @@ como exteriores, com grande resistência ás intempéries e facilidade de manuse
 Acrescenta à forte característica sustentável do objeto, a ausência do uso de água e da produção de lixo em qualquer fase do processo de fabrico.</p>
 <ImageCarousel
       images={[
-        "/coima/assets/transformar/banco-1.webp",
-        "/coima/assets/transformar/banco-2.webp",
-        "/coima/assets/transformar/banco-3.webp",
-        "/coima/assets/transformar/banco-4.webp",
-        "/coima/assets/transformar/banco-5.webp"
+        "/assets/transformar/banco-1.webp",
+        "/assets/transformar/banco-2.webp",
+        "/assets/transformar/banco-3.webp",
+        "/assets/transformar/banco-4.webp",
+        "/assets/transformar/banco-5.webp"
       ]}
     />
   </div>

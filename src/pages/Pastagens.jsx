@@ -11,13 +11,13 @@ descarte para o solo e sua presença no leite (mesmo respeitando períodos de ca
     </p>
     <ImageCarousel
       images={[
-        "/coima/assets/plantar/pastagens-1.webp",
-        "/coima/assets/plantar/pastagens-2.webp",
-        "/coima/assets/plantar/pastagens-3.webp",
-        "/coima/assets/plantar/pastagens-4.webp",
-        "/coima/assets/plantar/pastagens-5.webp",
-        "/coima/assets/plantar/pastagens-6.webp",
-        "/coima/assets/plantar/pastagens-7.webp"
+        "/assets/plantar/pastagens-1.webp",
+        "/assets/plantar/pastagens-2.webp",
+        "/assets/plantar/pastagens-3.webp",
+        "/assets/plantar/pastagens-4.webp",
+        "/assets/plantar/pastagens-5.webp",
+        "/assets/plantar/pastagens-6.webp",
+        "/assets/plantar/pastagens-7.webp"
       ]}
     />
   </div>

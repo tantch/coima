@@ -9,12 +9,12 @@ construção de baixo custo e de rápida execução, abriga mesas vazadas de tel
 mudas produzidas no viveiro, para o reorestamento da Mata Atlântica, através do projeto jardim nômade.</p>
 <ImageCarousel
       images={[
-        "/coima/assets/transformar/viveiro-1.webp",
-        "/coima/assets/transformar/viveiro-2.webp",
-        "/coima/assets/transformar/viveiro-3.webp",
-        "/coima/assets/transformar/viveiro-4.webp",
-        "/coima/assets/transformar/viveiro-5.webp",
-        "/coima/assets/transformar/viveiro-6.webp",
+        "/assets/transformar/viveiro-1.webp",
+        "/assets/transformar/viveiro-2.webp",
+        "/assets/transformar/viveiro-3.webp",
+        "/assets/transformar/viveiro-4.webp",
+        "/assets/transformar/viveiro-5.webp",
+        "/assets/transformar/viveiro-6.webp",
       ]}
     />
   </div>

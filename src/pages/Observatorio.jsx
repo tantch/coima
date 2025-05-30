@@ -7,9 +7,9 @@ const Observatorio = () => (
 pré-histórico megalítico),executada com forma externa de bambu, cheia com charcrete (concreto de carvão e cimento) e com estrutura interna também de bambu.</p>
     <ImageCarousel
       images={[
-        "/coima/assets/conjungar/observatorio-1.webp",
-        "/coima/assets/conjungar/observatorio-2.webp",
-        "/coima/assets/conjungar/observatorio-3.webp",
+        "/assets/conjungar/observatorio-1.webp",
+        "/assets/conjungar/observatorio-2.webp",
+        "/assets/conjungar/observatorio-3.webp",
       ]}
     />
   </div>

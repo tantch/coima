@@ -7,10 +7,10 @@ const Fertilizantes = () => (
     </p>
     <ImageCarousel
       images={[
-        "/coima/assets/reciclar/fertelizantes-1.webp",
-        "/coima/assets/reciclar/fertelizantes-2.webp",
-        "/coima/assets/reciclar/fertelizantes-3.webp",
-        "/coima/assets/reciclar/fertelizantes-4.webp"
+        "/assets/reciclar/fertelizantes-1.webp",
+        "/assets/reciclar/fertelizantes-2.webp",
+        "/assets/reciclar/fertelizantes-3.webp",
+        "/assets/reciclar/fertelizantes-4.webp"
       ]}
     />
   </div>

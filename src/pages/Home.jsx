@@ -76,8 +76,8 @@ const Home = () => {
   return (
     <div className="bg-orange-50">
       <div className='mb-12'>
-        <div className="relative w-screen h-[120vh] bg-cover bg-center" style={{ backgroundImage: "url('/coima/images/main.jpg" }}>
-          <img src="/coima/logo-coima.svg" alt="Logo" className="absolute top-8 left-8 h-88" />
+        <div className="relative w-screen h-[120vh] bg-cover bg-center" style={{ backgroundImage: "url('/images/main.jpg" }}>
+          <img src="/logo-coima.svg" alt="Logo" className="absolute top-8 left-8 h-88" />
           <ul className="text-sm absolute bottom-0 px-16 py-4 text-orange-50 list-disc">
             <li className="pt-1">
               o  projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
