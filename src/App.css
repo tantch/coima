@@ -4,3 +4,19 @@ body {
 .slick-next:before, .slick-prev:before {
   color: black !important;
 }
+.justified-text {
+  text-align: justify;
+  text-justify: distribute;
+}
+.justified-text::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .stretch-text::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}

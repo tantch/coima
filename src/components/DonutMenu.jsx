@@ -112,13 +112,14 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
               {pages[currentMenu].submenu.map((page, index) => (
                 <div
                   key={index}
+                  className="donut-labels-child"
                 >
-                  <div
-                    className={`donut-label focus`}
-                  >
-                    {page.name}
-                  </div>
-                  <div className="page-items">
+                  <div className="donut-label-wrapper"> 
+                    <div
+                      className={`donut-label focus`}
+                    >
+                      {page.name}
+                    </div>
                     {page.items.map((item, itemIndex) => (
                       <button
                         key={itemIndex}

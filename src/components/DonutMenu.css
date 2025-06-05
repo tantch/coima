@@ -29,12 +29,48 @@
   align-items: center;
 }
 
-.donut-labels .donut-label:first-child {
+.donut-label:first-child {
   align-items: flex-start;
 }
-
-.donut-labels .donut-label:last-child {
+.donut-label:last-child {
   align-items: flex-end;
+}
+
+.submenu .donut-labels-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items:center;
+}
+.submenu .donut-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+}
+
+.submenu .donut-labels-child:first-child {
+  align-items: flex-start;
+}
+.submenu .donut-labels-child:last-child {
+  align-items: flex-end;
+}
+.submenu .donut-labels-child:first-child .donut-label-wrapper{
+  align-items: flex-start;
+}
+.submenu .donut-labels-child:last-child .donut-label-wrapper{
+  align-items: flex-end;
+}
+
+.submenu .donut-labels-child:first-child .donut-label-wrapper > button{
+  align-self: flex-start;
+}
+.submenu .donut-labels-child:nth-child(2) .donut-label-wrapper > button{
+  align-self: flex-start;
+}
+.submenu .donut-labels-child:last-child .donut-label-wrapper > button{
+  align-self: flex-end;
+}.submenu .donut-labels-child:nth-last-child(2) .donut-label-wrapper > button{
+  align-self: flex-end;
 }
 
 .donut-item:first-child {

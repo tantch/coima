@@ -9,8 +9,20 @@ linguagens e sensibilidades, que nos representem e integrem na sociedade.</p>
     <p>2019</p>
     <h2>luna</h2>
     <p>2022</p>
+    <ImageCarousel 
+      images={[
+        "/assets/inovar/mara-luna-1.webp",
+        "/assets/inovar/mara-luna-2.webp",
+        "/assets/inovar/mara-luna-3.webp",
+        "/assets/inovar/mara-luna-4.webp",
+        "/assets/inovar/mara-luna-5.webp"
+      ]} />
     <h2>talissa</h2>
     <p>2022</p>
+    <ImageCarousel 
+      images={[
+        "/assets/inovar/talisa-1.webp",
+      ]} />
   </div>
 );
 
