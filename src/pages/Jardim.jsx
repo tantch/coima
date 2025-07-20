@@ -5,7 +5,7 @@ const Jardim = () => (
     <p>2019 - virada sustentável, parque lage, rio de janeiro</p>
     <p>2020 - estação jardingá, rppn vale verdejante, andrade costa</p>
     <p>2023 - retomada cultural, museu casa da hera, vassouras</p>
-    <p className="justified-text">sistema de reorestamento com espécies epífitas (orquídeas e bromélias)</p>
+    <p >sistema de reflorestamento com espécies epífitas (orquídeas e bromélias)</p>
     <p className="justified-text">plantas nativas integradas a vasos artesanais biodegradáveis, elaborados de acordo com as necessidades físicas de cada espécie, como umidade, temperatura e
 disponibilidade de nutrientes.</p>
     <p className="justified-text">organismos vegetais suspensos que permitem deslocações ao final de cada ciclo de polinização ou de dispersão de sementes- matrizes móveis capazes de revitalizar
