@@ -89,7 +89,7 @@ const DonutMenu = ({ setCurrentPage, currentPage, setCurrentMenu, currentMenu })
           </div>
         ))}
       </div>
-      <div className={`menu-description justified-text py-8 ${pages?.[currentMenu]?.className}`}>
+      <div className={`menu-description justified-text force-justified py-8 ${pages?.[currentMenu]?.className}`}>
         {currentMenu !== null && pages[currentMenu].description}
       </div>
       <div className={`submenu ${pages?.[currentMenu]?.className} pb-8`}>
