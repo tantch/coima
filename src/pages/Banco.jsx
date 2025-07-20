@@ -3,7 +3,7 @@ import ImageCarousel from "../components/ImageCaroussel";
 const Banco = () => (
   <div>
     <p>2025</p>
-    <p>o banco aroeira é uma reexão sobre o ‘sentar’ a partir do trono indígena, como consciência do significado ecológico dos nossos hábitos e como responsabilidade
+    <p className="justified-text">o banco aroeira é uma reexão sobre o 'sentar' a partir do trono indígena, como consciência do significado ecológico dos nossos hábitos e como responsabilidade
 cultural e política do design.
 é resposta a um novo material desenvolvido pela coima, denominado recoal, que consiste na aglutinação de carvão vegetal (produzido com resíduos de madeira
 descartados pelas árvores da oresta, em pequenos fornos móveis, que operam nos próprios locais de coleta) com uma resina de poliuretano vegetal (feita à base de

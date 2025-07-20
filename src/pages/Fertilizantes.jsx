@@ -2,7 +2,7 @@ import ImageCarousel from "../components/ImageCaroussel";
 
 const Fertilizantes = () => (
   <div>
-    <p>
+    <p className="justified-text">
       a reciclagem do esterco bovino, pela ação de minhocas vermelhas (húmus) e dos resíduos orgânicos (compostagem), em conjunto como saneamento e armazenamento das águas estercadas do curral, produzem nossa gama de fertilizantes biológicos.
     </p>
     <ImageCarousel

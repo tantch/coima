@@ -11,8 +11,8 @@ const Trilha = () => (
         "/assets/compartilhar/trilha-1.webp",
         "/assets/compartilhar/trilha-2.webp",
         "/assets/compartilhar/trilha-3.webp",
-        "/assets/compartilhar/trilha-4.webp",
         "/assets/compartilhar/trilha-5.webp",
+        "/assets/compartilhar/trilha-6.webp",
       ]}
     />
   </div>

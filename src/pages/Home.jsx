@@ -78,17 +78,17 @@ const Home = () => {
       <div className='mb-12'>
         <div className="relative w-screen h-[120vh] bg-cover bg-center" style={{ backgroundImage: "url('/images/main.jpg" }}>
           <img src="/logo-coima.svg" alt="Logo" className="absolute top-8 left-8 h-88" />
-          <ul className="text-sm absolute bottom-0 px-16 py-4 text-orange-50 list-disc">
-            <li className="pt-1">
+          <ul className="text-sm absolute bottom-0 px-16 py-4 text-orange-50 list-disc w-full">
+            <li className="pt-1 homepage-text">
               o  projeto coima é sediado em Vassouras ( Rio de Janeiro, Brasil ) e desenvolve-se na Fazenda Moinho Velho, numa propriedade com 45ha, sendo 90% da área coberta por foresta tropical (bioma da Mata Atlântica).
             </li>
-            <li className="pt-1">
+            <li className="pt-1 homepage-text">
               a metodologia do projeto, baseada na permacultura, considera o território e as ações nele realizadas como um conjunto, onde todos os processos têm lugar, desde a coleta de matérias primas, até ao seu processamento.
             </li>
-            <li className="pt-1">
+            <li className="pt-1 homepage-text">
               pesquisa e prática de conteúdos ecológicos, sobre o equilíbrio entre a nossa existência e o lugar que ocupamos, criam contrapartidas ambientais, conscientes e responsáveis do impacto da ação humana na natureza.
             </li>
-            <li className="pt-1">
+            <li className="pt-1 homepage-text">
               rede de soluções experimentais que procuram alternativas para cuidar, restaurar, consolidar e valorizar a Mata Atlântica, com propostas alternativas, sustentáveis e pluridisciplinares, conectadas por circuitos:
             </li>
           </ul>

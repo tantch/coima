@@ -3,7 +3,7 @@ import ImageCarousel from "../components/ImageCaroussel";
 const Maloca = () => (
   <div>
     <p>aldeia indígena krenak, resplendor, mg - 2022</p>
-    <p>a concepção da maloca (espaço para recepção e celebração de rituais) na aldeia indígena krenak, a pedido de irani e aylton krenak, trouxe a reexão sobre como se
+    <p className="justified-text">a concepção da maloca (espaço para recepção e celebração de rituais) na aldeia indígena krenak, a pedido de irani e aylton krenak, trouxe a reexão sobre como se
 pode aliar o tempo ancestral da cosmovisão indígena, com o tempo atual da informação e comunicação da sociedade, onde o convívio de diferentes culturas deverá
 preservar as mais frágeis.
 localizada ás margens do rio uatu (rio doce), é proposta uma imersão ao nível da água sagrada através do rebaixamento do piso em terra, onde os olhos ficam ao

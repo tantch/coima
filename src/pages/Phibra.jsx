@@ -3,7 +3,7 @@ import ImageCarousel from "../components/ImageCaroussel";
 const Phibra = () => (
   <div>
     <p>2017</p>
-    <p>o desenho da poltrona e do banco baseia-se na autonomia entre os apoios -placas de plástico reciclado- e os assentos -volumes maciços formados por um compósito orgânico que alia a resistência das fibras da bananeira com a dureza da resina vegetal de poliuretano, feita à base de óleo de mamona-.
+    <p className="justified-text">o desenho da poltrona e do banco baseia-se na autonomia entre os apoios -placas de plástico reciclado- e os assentos -volumes maciços formados por um compósito orgânico que alia a resistência das fibras da bananeira com a dureza da resina vegetal de poliuretano, feita à base de óleo de mamona-.
 as fibras, oriundas do abate obrigatório do pseudocaule da bananeira após a colheita do fruto, passam pelo corte, desagregação e secagem ao sol e, depois de
 misturadas com a resina vegetal, são prensadas dentro de moldes, num processo totalmente artesanal e sustentável, pela ausência de energia e lixo.
 a montagem dos componentes é feita simplesmente por encaixe.

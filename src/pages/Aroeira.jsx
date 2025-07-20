@@ -2,7 +2,7 @@ import ImageCarousel from "../components/ImageCaroussel";
 
 const Aroeira = () => (
   <div>
-    <p>
+    <p className="justified-text">
       a aroeira é uma árvore nativa pioneira da Mata Atlântica, que existe na oresta em abundância e onde podemos coletar o fruto (pimenta rosa, uso em culinária e cosmética), a folha e a casca (uso em chá medicinal).
     </p>
     <ImageCarousel

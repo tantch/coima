@@ -7,12 +7,73 @@ body {
 .justified-text {
   text-align: justify;
   text-justify: distribute;
+  text-align-last: justify;
+  font-size: 0.68rem;
+  line-height: 1.3;
 }
-.justified-text::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
+
+/* Homepage specific text - smaller than general justified text */
+.homepage-text {
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: justify;
+  font-size: 0.45rem;
+  line-height: 1.1;
 }
+
+/* Mobile - smaller font, no forced justification */
+@media (max-width: 767px) {
+  .justified-text {
+    text-align-last: left;
+    font-size: 0.62rem;
+  }
+  .homepage-text {
+    text-align-last: left;
+    font-size: 0.4rem;
+  }
+}
+
+/* Tablet - medium font, controlled justification */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .justified-text {
+    text-align-last: left;
+    font-size: 0.68rem;
+  }
+  .homepage-text {
+    text-align-last: left;
+    font-size: 0.5rem;
+    line-height: 1.2;
+  }
+}
+
+/* Desktop - larger font, forced justification for single lines */
+@media (min-width: 1024px) and (max-width: 1332px) {
+  .justified-text {
+    text-align-last: justify;
+    font-size: 0.62rem;
+    line-height: 1.4;
+  }
+  .homepage-text {
+    text-align-last: justify;
+    font-size: 0.5rem;
+    line-height: 1.2;
+  }
+}
+
+/* Large desktop - even larger font for better line breaks */
+@media (min-width: 1333px) {
+  .justified-text {
+    text-align-last: justify;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .homepage-text {
+    text-align-last: justify;
+    font-size: 0.6rem;
+    line-height: 1.4;
+  }
+}
+
 @media (min-width: 768px) {
   .stretch-text::after {
     content: '';
