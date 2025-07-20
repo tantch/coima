@@ -4,6 +4,14 @@ body {
 .slick-next:before, .slick-prev:before {
   color: black !important;
 }
+
+/* Align navigation dots with left-aligned images */
+.slick-dots {
+  text-align: left !important;
+  left: 0 !important;
+  right: auto !important;
+}
+
 .justified-text {
   text-align: justify;
   text-justify: distribute;
